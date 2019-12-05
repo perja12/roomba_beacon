@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name roomba_beacon-rescue)(type Legacy)(uri ${KIPRJMOD}/roomba_beacon-rescue.lib)(options "")(descr ""))
+)

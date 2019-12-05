@@ -1,0 +1,6 @@
+*~
+*.csv
+*.tsv
+*.xml
+*.bak
+fp-info-cache
