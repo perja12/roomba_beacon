@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Vaccum cleaner IR wall"
+Title "IR beacon for vacuum cleaner"
 Date "2019-11-12"
 Rev "1.0"
 Comp "Per Thomas Jahr"
@@ -202,7 +202,7 @@ F 3 "" H 5200 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L roomba_beacon-rescue:ATtiny85V-10SU-MCU_Microchip_ATtiny U1
+L ir_beacon-rescue:ATtiny85V-10SU-MCU_Microchip_ATtiny U1
 U 1 1 5DCA85E8
 P 5200 4900
 F 0 "U1" H 4950 4350 50  0000 R CNN
@@ -275,7 +275,7 @@ Green LED status indicator. Number of blinks:\n1 - device has turned on\n2 - dev
 Text Notes 8800 1100 0    50   ~ 0
 IR LED for sending pulses to the \nIR receiver on the vaccum cleaner.
 Text Notes 6800 4350 0    50   ~ 0
-DIP switch to configure how many \nminutes the device should be active \nbeforing going back to sleep:\n0: 60\n1: 120\n2: 180\n4: always on
+DIP switch to configure how many \nminutes the device should be active \nbeforing going back to sleep:\n0: always on\n1: 60\n2: 120\n3: 180
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5DE0442B
@@ -376,7 +376,7 @@ SCK_PIN
 Text Notes 4700 2450 0    50   ~ 0
 ISP (In System Programming) header
 $Comp
-L roomba_beacon-rescue:AVR-ISP-6-Connector J1
+L ir_beacon-rescue:AVR-ISP-6-Connector J1
 U 1 1 5DE603CF
 P 4800 3150
 F 0 "J1" H 4521 3246 50  0000 R CNN

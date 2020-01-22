@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=roomba_beacon.net
+LastNetListRead=ir_beacon.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
