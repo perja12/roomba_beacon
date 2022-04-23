@@ -1,5 +1,7 @@
 # IR Beacon for Roomba
 
+Quick links: [Schematic](https://perja12.github.io/roomba_beacon/kicad/ir_beacon/ir_beacon.pdf) | [Interactive BOM](https://perja12.github.io/roomba_beacon/kicad/ir_beacon/bom/ibom.html)
+
 This project describes an IR beacon that can be used with certain Roomba vacuum cleaners. The beacon can be used to prevent the vacuum cleaner from entering a room or other off-limit zones. The vacuum cleaner will simply turn around when it receives the infrared light emitted from the beacon.
 
 The project is inspired by a similar project from http://gregthielen.me/blogstuff/2017/06/27/roomba-virtual-wall/ and the timings for IR LED is taken directly from that page.
