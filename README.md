@@ -24,7 +24,7 @@ There are two modes of operation:
 
 # Push button on/off switch
 
-The circuit uses a power latch implemented by using special instructions that skips resetting a particular variable to zero during reset (see the _power_ variable in the code).  The push button is connected to the RESET pin on and when pressed it will reset the MCU. The setup function toggles the _power_ variable and then circuit either goes to sleep or starts blinking the LED. With such a design it is important to have low sleep current. The solution is described here: http://www.technoblogy.com/show?VOO.
+The circuit uses a power latch implemented by using special instructions that skips resetting a particular variable to zero during reset (see the _power_ variable in the code).  The push button is connected to the RESET pin and when pressed it will reset the MCU. The setup function toggles the _power_ variable and the circuit either goes to sleep or starts blinking the LED. With such a design it is important to have low sleep current. The solution is described here: http://www.technoblogy.com/show?VOO.
 
 # Configurable on-duration
 
@@ -34,11 +34,15 @@ Depending on the route the vacuum cleaner chooses one can decide how many hours 
 
 On start up the indicator LED will blink rapidly if it is time to replace the batteries (around 2V). This is implemented by setting the internal reference voltage as ADC input and the target VCC as the ADC reference. The solution is described in this application note from Microchip: http://ww1.microchip.com/downloads/en/Appnotes/00002447A.pdf
 
-# Other settings
+# How to build
+
+Install the ATTinyCore and use the following settings in the Arduino IDE
 
 * Uses ATTinyCore: https://github.com/SpenceKonde/ATTinyCore
 * 8 MHz internal clock
 * B.O.D. disabled to save power
+
+There is also a Makefile that uses [arduino-cli](https://www.arduino.cc/pro/cli).
 
 # Enclosure
 
